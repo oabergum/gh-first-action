@@ -9,7 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     # Define the stps to run
     steps:
+      # First step
       - name: Print Greating
-        run: echo "Hello!!!!"
+        run: |
+          echo "Hello!!!!"
+          echo "Stating workflow"
+      # Second step    
       - name: Print Exit for now
         run: echo "Exiting first workflow"
