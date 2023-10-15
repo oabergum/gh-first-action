@@ -1,0 +1,15 @@
+# The name of the workflow
+name: First Workflow
+# Triggers for the workflow (workflow_dispatch = triggered by user)
+on: workflow_dispatch
+# The jobs to do
+jobs:
+  first-job:
+    # Define environment
+    runs-on: ubuntu-latest
+    # Define the stps to run
+    steps:
+      - name: Print Greating
+        run: echo "Hello!!!!"
+      - name: Print Exit for now
+        run: echo "Exiting first workflow"
